@@ -3,6 +3,11 @@ Raspberry Pi MediaTek MT7601
 
 Drivers for the MediaTek MT7601 USB Wifi adaptor.
 
+```
+3.10.25+
+Linux raspberrypi 3.10.25+ #622 PREEMPT Fri Jan 3 18:41:00 GMT 2014 armv6l GNU/Linux
+```
+
 1. Copy mt7601Usta.ko to /lib/modules/3.10.25/kernel/drivers/net/wireless
 
 2. Copy RT2870STA.dat to /etc/Wireless/RT2870STA directory
