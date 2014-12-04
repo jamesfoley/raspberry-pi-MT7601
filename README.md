@@ -1,6 +1,26 @@
 update: This driver has been updated for 3.12.32+
 
-same instructions apply just the driver has been compiled to work for 3.12.32+
+Download  the mt7601Usta.ko file.
+
+copy it to your  /lib/modules/version/kernel/drivers/net/wireless folder.
+
+scp mt7601Usta.ko root@rpiaddress:/lib/modules/version/kernel/drivers/net/wireless
+
+ Copy RT2870STA.dat to /etc/Wireless/RT2870STA directory
+
+ scp  RT2870STA.dat root@rpiaddress://etc/Wireless/RT2870STA
+
+Then run sudo depmod -a
+
+Then Add the below text to /etc/network/interfaces. Note that quotes around SSID and password are required
+
+auto ra0
+allow-hotplug ra0
+iface ra0 inet dhcp
+wpa-ssid "ENTER YOUR NETWORK SSID"
+wpa-psk "ENTER YOUR NETWORK PASSWORD"
+
+these instructions apply for 3.12.32+
 compilation instruction were followed from http://va3paw.com/2014/03/16/hsmm-mesh-on-raspberry-pi/#more-629
 
 
