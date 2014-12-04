@@ -1,3 +1,9 @@
+update: This driver has been updated for 3.12.32+
+
+same instructions apply just the driver has been compiled to work for 3.12.32+
+compilation instruction were followed from http://va3paw.com/2014/03/16/hsmm-mesh-on-raspberry-pi/#more-629
+
+
 Raspberry Pi MediaTek MT7601
 ============================
 
